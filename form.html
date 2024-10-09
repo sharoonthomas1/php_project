@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form</title>
+    <link href="./assets/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/custom.css">
+  </head>
+  <body>
+    <section class="w-5/12 m-auto py-28">
+      <header class="text-[#fff] text-center text-xl">Registration Form</header>
+      <form id="registrationForm" action="#" class="form">
+        <div class="input-box">
+          <label for="fullName">Full Name</label>
+          <input id="fullName" type="text" placeholder="Enter full name" required />
+        </div>
+
+        <div class="input-box">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="Enter email address" required />
+        </div>
+
+        <div class="input-box">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter Password" required />
+        </div>
+
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" value="male" checked />
+              <label for="check-male">Male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" value="female" />
+              <label for="check-female">Female</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" value="other" />
+              <label for="check-other">Prefer not to say</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="hobbies-box py-4">
+          <h3 class="text-white mb-4">Hobbies</h3>
+          <div class="hobbies-option space-y-2 flex gap-x-4 items-center">
+            <div class="hobby">
+              <input type="checkbox" id="hobby-reading" name="hobbies" value="Reading" />
+              <label for="hobby-reading" class="text-white ml-2">Reading</label>
+            </div>
+            <div class="hobby">
+              <input type="checkbox" id="hobby-traveling" name="hobbies" value="Traveling" />
+              <label for="hobby-traveling" class="text-white ml-2">Traveling</label>
+            </div>
+            <div class="hobby">
+              <input type="checkbox" id="hobby-music" name="hobbies" value="Music" />
+              <label for="hobby-music" class="text-white ml-2">Music</label>
+            </div>
+            <div class="hobby">
+              <input type="checkbox" id="hobby-sports" name="hobbies" value="Sports" />
+              <label for="hobby-sports" class="text-white ml-2">Sports</label>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
